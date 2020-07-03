@@ -13,9 +13,11 @@ class _HomeState extends State<Home> {
         child: Column(
           children: <Widget>[
             FlatButton.icon(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.pushNamed(context, '/location');
+              },
               icon: Icon(Icons.edit_location),
-              label: Text('Edit location'),
+              label: Text('Edit location'), 
             ),
           ],
         ),
