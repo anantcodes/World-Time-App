@@ -20,9 +20,12 @@ print(data);
 
    String bgImage = data['isDaytime'] ? 'daytime.jpg' : 'nighttime.jpg';
 
+   Color bgColor = data['isDaytime'] ? Colors.blue : Colors.indigo[700];
+
 
 
     return Scaffold(
+      backgroundColor: bgColor,
       body: SafeArea(
         child: Container(
           decoration: BoxDecoration(
