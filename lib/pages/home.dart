@@ -42,8 +42,16 @@ print(data);
                   onPressed: () {
                     Navigator.pushNamed(context, '/location');
                   },
-                  icon: Icon(Icons.edit_location),
-                  label: Text('Edit location'),
+                  icon: Icon(
+                      Icons.edit_location,
+                    color: Colors.grey[300],
+                  ),
+                  label: Text(
+                      'Edit location',
+                    style: TextStyle(
+                      color: Colors.grey[300],
+                    ),
+                  ),
                 ),
                 SizedBox(height: 20.0),
                 Row(
@@ -54,6 +62,7 @@ print(data);
                       style: TextStyle(
                         fontSize: 28.0,
                         letterSpacing: 2.0,
+                        color: Colors.white,
                       ),
                     ),
                   ],
@@ -63,6 +72,7 @@ print(data);
                   data['time'],
                   style: TextStyle(
                     fontSize: 66.0,
+                    color: Colors.white,
                   ),
                 )
               ],
